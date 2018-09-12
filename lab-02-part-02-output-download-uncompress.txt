@@ -18,7 +18,7 @@ $ echo hello
 
 Copy and paste the output below.
 ----------
-
+hello
 
 
 ==========
@@ -28,7 +28,7 @@ $ echo hello there
 
 Copy and paste the output below.
 ----------
-
+hello there
 
 
 ==========
@@ -38,7 +38,7 @@ $ echo good mornin'
 
 Copy and paste the output below.
 ----------
-
+>
 
 
 ==========
@@ -56,7 +56,7 @@ $ echo "good mornin'"
 
 Copy and paste the output below.
 ----------
-
+good mornin'
 
 
 ==========
@@ -66,6 +66,7 @@ $ echo *
 
 What happens?
 ----------
+Adlm Adobe Applications Desktop Documents Downloads Library MPLABXProjects Movies Music New Unity Project Pictures Public QLData Things drills.py google.txt gooooooooa grapa.tar ipe.properties isus mtec1002 mtec1002-lab-02.zip pymel.log stuff xgen
 
 
 
@@ -74,7 +75,7 @@ What happens?
 
 Write the command that you used below:
 ----------
-
+clear
 
 
 ==========
@@ -87,7 +88,12 @@ $ curl google.com
 
 Copy and paste the output below.
 ----------
-
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="http://www.google.com/">here</A>.
+</BODY></HTML>
 
 
 ==========
@@ -97,7 +103,7 @@ $ curl www.google.com
 
 Copy and paste the output below, but not the whole thing!  Just copy up to the part that has the title tags (<title>......</title>).
 ----------
-
+&bih="+b+"&ei="+google.kEI);}).call(this);})();</script><div id="xjsd"></div><div id="xjsi"><script nonce="u/8Bn1i/eosBmwkyXZrKfQ==">(function(){function c(b){w
 
 
 ==========
@@ -121,7 +127,7 @@ Write the command you used to determine your directory.  Also, copy and paste th
 
 Write the command that you used to change to your home directory.  If you were already in your home directory, write the command that you *would* have used to change to it!
 ----------
-
+cd ~
 
 
 ==========
@@ -137,15 +143,18 @@ Use ls to verify that it downloaded.
 
 Write down the command that you used to download the file below.  Additionally, write the output of the command below.
 ----------
+curl -o mtec1002-lab-02.zip http://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/02/mtec1002-lab-02.zip
 
 
-
+% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  935k  100  935k    0     0  3056k      0 --:--:-- --:--:-- --:--:-- 3056k
 ==========
 14. We learned a command to uncompress a .zip file.  Use it to extract the files and folders from the file you just downloaded.
 
 Write down the command that you used to uncompress the file.
 ----------
-
+unzip mtec1002-lab-02.zip
 
 
 ==========
@@ -153,7 +162,7 @@ Write down the command that you used to uncompress the file.
 
 Copy and paste the output below.
 ----------
-
+books	logs	web
 
 
 ==========
@@ -164,6 +173,16 @@ We're going to mess around with archiving and compressing files.  We'll make a d
 
 Copy and paste the output below.
 ----------
+Adlm			New Unity Project	ipe.properties
+Adobe			Pictures		isus
+Applications		Public			mtec1002
+Desktop			QLData			mtec1002-lab-02
+Documents		Things			mtec1002-lab-02.zip
+Downloads		__MACOSX		pizza
+Library			drills.py		pymel.log
+MPLABXProjects		google.txt		stuff
+Movies			gooooooooa		xgen
+Music			grapa.tar
 
 
 
@@ -176,7 +195,7 @@ List the files in the directory you're currently in (which should be stuff).
 
 Copy and paste the output below.
 ----------
-
+hello.txt
 
 
 ==========
@@ -198,7 +217,8 @@ $ tar -cvf stuff.tar stuff
 
 Copy and paste the output below.
 ----------
-
+a stuff
+a stuff/hello.txt
 
 
 ==========
@@ -206,6 +226,16 @@ Copy and paste the output below.
 
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
+Adlm			New Unity Project	ipe.properties
+Adobe			Pictures		isus
+Applications		Public			mtec1002
+Desktop			QLData			mtec1002-lab-02
+Documents		Things			mtec1002-lab-02.zip
+Downloads		__MACOSX		pizza
+Library			drills.py		pymel.log
+MPLABXProjects		google.txt		stuff
+Movies			gooooooooa		stuff.tar
+Music			grapa.tar		xgen
 
 
 
@@ -216,6 +246,16 @@ gzip stuff.tar
 
 List your files again.... you should have a new file with a .gz extension.  Copy and paste the output of your this below.
 ----------
+Adlm			New Unity Project	ipe.properties
+Adobe			Pictures		isus
+Applications		Public			mtec1002
+Desktop			QLData			mtec1002-lab-02
+Documents		Things			mtec1002-lab-02.zip
+Downloads		__MACOSX		pizza
+Library			drills.py		pymel.log
+MPLABXProjects		google.txt		stuff
+Movies			gooooooooa		stuff.tar.gz
+Music			grapa.tar		xgen
 
 
 
@@ -230,7 +270,7 @@ Change your directory to mtec1002-lab-02.
 
 List the files.  Copy and paste the output below (stuff.tar.gz should be there).
 ----------
-
+books		logs		stuff.tar.gz	web
 
 ==========
 23. You should be in the lab directory.  Let's uncompress the file.
@@ -239,6 +279,7 @@ $ tar -xvf stuff.tar.gz
 
 List the files.  Copy and paste the output below (the folder, stuff, should be there).
 ----------
+books		logs		stuff		stuff.tar.gz	web
 
 
 
